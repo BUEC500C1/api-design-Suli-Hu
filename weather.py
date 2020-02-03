@@ -59,7 +59,7 @@ class AirportWeather:
                 print(weather[0])
                 print(
                     f"{weather[1]['description']:<20}\t"
-                    f"Temperature: {round(weather[1]['temperature'], 1):>4} C\t"
+                    f"Temperature: {round(weather[1]['temperature'],1):>4} C\t"
                     f"Visibility: {weather[1]['visibility']:>8} m")
             return('Report End')
         except Exception:
