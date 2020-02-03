@@ -58,12 +58,16 @@ class AirportWeather:
 
 
     def print_weather(self):
-        for weather in self.histories:
-            print(weather[0])
-            print(
-                f"{weather[1]['description']:<20}\t"
-                f"Temperature: {round(weather[1]['temperature'], 1):>4} C\t"
-                f"Visibility: {weather[1]['visibility']:>8} m")
+        try:
+            for weather in self.histories:
+                print(weather[0])
+                print(
+                    f"{weather[1]['description']:<20}\t"
+                    f"Temperature: {round(weather[1]['temperature'], 1):>4} C\t"
+                    f"Visibility: {weather[1]['visibility']:>8} m")
+            return('Report End')
+        except:
+            return('Report Failed')
 
 
 def main():
