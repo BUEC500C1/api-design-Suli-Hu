@@ -26,7 +26,7 @@ def test_internet():
 
 def test_typo():
     aw1 = AirportWeather('bos', 3)
-    aw2 = AirportWeather('BOS', three)
+    aw2 = AirportWeather('BOS', 'three')
     assert aw1.print_weather() == 'Report End'
     assert aw2.print_weather() == 'Report End'
 
