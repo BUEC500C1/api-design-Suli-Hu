@@ -13,7 +13,9 @@
 	It also tests the normal cases.
 - `data.csv`
 	This is the source file of all the airports in the world. You can check the name, iata code, coordinates and city.
-
+## User Story
+- "As a user, I would like to get weather informations form my interested airports."
+- "As a user, I would like to get weather informations in a specific period."
 ## AirportWeatherAPI
 ### Imported Files
 - requests
